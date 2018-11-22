@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/regist_bg"
+    android:orientation="vertical"
+    tools:context="com.example.findfood.app.LoginActivity">
+
+    <ImageView
+        android:id="@+id/Image_Logo"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.5"
+        app:srcCompat="@drawable/logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.5"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/name_txt"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:autoText="false"
+            android:background="@mipmap/txt_inputinfo"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="请输入用户名"
+            android:inputType="textPersonName"
+            android:textColor="@color/c1olorAAA" />
+
+        <EditText
+            android:id="@+id/password_txt"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/txt_inputinfo"
+            android:ems="10"
+            android:gravity="center_vertical|center"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:textColor="@color/c1olorAAA" />
+
+        <EditText
+            android:id="@+id/password_txt_ag"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/txt_inputinfo"
+            android:ems="10"
+            android:gravity="center_vertical|center"
+            android:hint="请再次输入密码"
+            android:inputType="textPassword"
+            android:textColor="@color/c1olorAAA" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/Veri_Code_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_margin="8dp"
+                android:layout_weight="0.5"
+                android:background="@mipmap/txt_inputinfo"
+                android:ems="10"
+                android:gravity="center_vertical|center"
+                android:hint="请输入验证码"
+                android:inputType="text"
+                android:textColor="@color/c1olorAAA" />
+
+            <Button
+                android:id="@+id/Veri_Code_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@mipmap/txt_inputinfo"
+                android:text="获取验证码"
+                android:textColor="@color/c1olorAAA"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/regist_btn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:background="@mipmap/button_one"
+            android:text="注册"
+            android:textColor="@color/div_white"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Guide" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorbuttonshap</item>
+        <item name="colorAccent">@color/c1olorAAA</item>
+
+    </style>
+
+    <!--应用的基本主题 -->
+    <style name="Main" parent="Theme.AppCompat.DayNight.NoActionBar">
+         <!--自定义应用主题 -->
+
+        <!--状态栏颜色-->
+        <item name="colorPrimaryDark">@color/colorbuttonshap</item>
+
+    </style>
+<!--gr_button 样式 底部menu按钮-->
+    <style name="tab_menu_item">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:background">@drawable/tab_menu_bg</item>
+        <item name="android:textColor">@drawable/tab_menu_text</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+</resources>

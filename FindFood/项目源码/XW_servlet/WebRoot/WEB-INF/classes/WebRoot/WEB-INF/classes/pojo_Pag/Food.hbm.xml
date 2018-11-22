@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="pojo_Pag">
+
+	
+	<class name="Food" table="tb_foods">
+		<id name="F_id" column="F_id">
+			<generator class="native"></generator>
+		</id>
+		<property name="F_price" ></property>
+		
+		<property name="F_name" ></property>
+		<property name="S_name" ></property>
+		<property name="F_number" ></property>
+		
+		<property name="F_introduce" ></property>
+		<property name="F_images"></property>
+		
+		
+	</class>
+</hibernate-mapping>

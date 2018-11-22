@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="pojo_Pag">
+
+	<class name="User" table="tb_user">
+		<id name="U_id" column="U_id">
+			<generator class="native"></generator>
+		</id>
+		
+		<property name="U_account" ></property>
+		<property name="U_password" ></property>
+		<property name="U_name" ></property>
+		<property name="U_sex"></property>
+		<property name="U_phone" ></property>
+		<property name="U_address" ></property>
+		<property name="U_balance" ></property>
+		<property name="U_birthday"></property>
+		<property name="U_headP"></property>
+		
+		
+	</class>
+</hibernate-mapping>

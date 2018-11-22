@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorYellow">#ff810f</color>
+    <color name="colorbuttonshap">#ffc638</color>
+    <color name="white">#fff</color>
+    <color name="text_yellow">#eeffa239</color>
+    <color name="bg_topbar">#ccc</color>
+    <color name="text_topbar">#cccccc</color>
+    <color name="div_white">#ffffff</color>
+    <color name="tab_menu_bg">#ccc</color>
+    <color name="transparent">#fff</color>
+    <color name="gray">#ccc</color>
+    <color name="c1olorAccent">#FF4081</color>
+    <color name="c1olorAAA">#333333</color>
+    <color name="yellow">#f4ff90</color>
+    <color name="red">#ff5858</color>
+</resources>

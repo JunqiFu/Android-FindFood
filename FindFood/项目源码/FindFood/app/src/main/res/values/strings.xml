@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Find Food</string>
+    <string name="text_start"><u>开始体验</u></string>
+    <string name="tab_menu_home">主页</string>
+    <string name="tab_menu_order">订单</string>
+    <string name="tab_menu_me">我的</string>
+    <string name="planet_prmpt">充值方式</string>
+    <string name="point_size" />
+    <string name="menu_search" > </string>
+    <string name="menu_setting" > </string>
+
+    <string-array name="tab_titles">
+        <item>最新</item>
+        <item>最热</item>
+        <item>最受欢迎</item>
+    </string-array>
+
+</resources>
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/newest_top_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="75dp"
+            android:layout_weight="1"
+            android:entries="@array/spingarrss"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/txt_Praise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="好评优先"
+            android:textSize="16sp"
+            android:textColor="@color/c1olorAAA"
+            android:textAlignment="center"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/newest_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="28dp" />
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="pojo_Pag">
+
+	
+	<class name="Older" table="tb_older">
+		<id name="O_id" column="O_id">
+			<generator class="native"></generator>
+		</id>
+		<property name="O_price" ></property>
+		
+		<property name="O_number" ></property>
+		<property name="U_account" ></property>
+		<property name="O_num" ></property>
+		<property name="S_name"></property>
+		<property name="O_total" ></property>
+		<property name="O_state"></property>
+		<property name="F_name"></property>
+		
+	</class> 
+</hibernate-mapping>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>XW_servlet</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  
+  <filter>
+    <filter-name>CharacterEncodingFilter</filter-name>
+    <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+    <init-param>
+        <param-name>encoding</param-name>
+        <param-value>utf-8</param-value>
+    </init-param>
+</filter>
+<filter-mapping>
+    <filter-name>CharacterEncodingFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+</filter-mapping>
+ 
+  <servlet>
+  	<servlet-name>RegisterServlet</servlet-name>
+  	<servlet-class>servlet_Pag.User_Register_servlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>RegisterServlet</servlet-name>
+  	<url-pattern>/RegisterServlet/*</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<servlet-class>servlet_Pag.User_Login_servlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<url-pattern>/LoginServlet/*</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+   	
+  <servlet>
+  	<servlet-name>AllShopsServlet</servlet-name>
+  	<servlet-class>servlet_Pag.Shops_allList_servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AllShopsServlet</servlet-name>
+  	<url-pattern>/AllShopsServlet/*</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>UserInfoServlet</servlet-name>
+  	<servlet-class>servlet_Pag.User_UserInfo_servlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>UserInfoServlet</servlet-name>
+  	<url-pattern>/UserInfoServlet/*</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>EditDataServlet</servlet-name>
+  	<servlet-class>servlet_Pag.User_EditDataUser_servlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>EditDataServlet</servlet-name>
+  	<url-pattern>/EditDataServlet/*</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>EditUserInfoServlet</servlet-name>
+  	<servlet-class>servlet_Pag.User_EditUserInfo_servlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>EditUserInfoServlet</servlet-name>
+  	<url-pattern>/EditUserInfoServlet/*</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	<servlet-name>AllShopServlet</servlet-name>
+
+	<servlet-class>servlet_Pag.Shop_AllShopInfo_Servlet</servlet-class>
+
+  </servlet>
+
+
+<servlet-mapping>
+
+<servlet-name>AllShopServlet</servlet-name>
+
+<url-pattern>/AllShopServlet/*</url-pattern>
+
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>AllFoodServlet</servlet-name>
+	<servlet-class>servlet_Pag.Food_AllFoodInfo_Servlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>AllFoodServlet</servlet-name>
+	<url-pattern>/AllFoodServlet/*</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>AllOlderServlet</servlet-name>
+	<servlet-class>servlet_Pag.Older_AllOlderInfo_Servlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>AllOlderServlet</servlet-name>
+	<url-pattern>/AllOlderServlet/*</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>UpdatePasswordServlet</servlet-name>
+
+<servlet-class>servlet_Pag.Password_Update_Servlet</servlet-class>
+
+</servlet>
+
+
+<servlet-mapping>
+
+<servlet-name>UpdatePasswordServlet</servlet-name>
+
+<url-pattern>/UpdatePasswordServlet/*</url-pattern>
+
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>EditUserServlet</servlet-name>
+	<servlet-class>servlet_Pag.User_Update_Servlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>EditUserServlet</servlet-name>
+	<url-pattern>/EditUserServlet/*</url-pattern>
+</servlet-mapping>
+</web-app>

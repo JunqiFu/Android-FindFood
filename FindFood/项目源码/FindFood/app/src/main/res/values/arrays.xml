@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spingarr">
+    <item>成都</item>
+    <item>上海</item>
+    <item>广州</item>
+    <item>深圳</item>
+    </string-array>
+
+    <string-array name="spingarrss">
+        <item>菜系</item>
+        <item>价格</item>
+        <item>距离</item>
+        <item>附近</item>
+    </string-array>
+    <string-array name="numbers">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+
+</resources>
+

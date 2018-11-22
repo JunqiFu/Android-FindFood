@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+     android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="-2dp">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="120dp" />
+
+        <LinearLayout
+            android:id="@+id/pointgroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal"></LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/mingdian"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                app:srcCompat="@mipmap/contents1" />
+
+            <TextView
+                android:id="@+id/txtmingdian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="名店抢购"
+                android:textColor="@color/c1olorAAA"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txt_dianming"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="阿波罗意大利餐厅"
+                android:textColor="@color/c1olorAAA"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@mipmap/quanss" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="6折代金券"
+                    android:textColor="@color/colorbuttonshap"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/tejiakuaican"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                app:srcCompat="@mipmap/contents2" />
+
+            <TextView
+                android:id="@+id/txt_tejia1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="特价快餐"
+                android:textColor="@color/c1olorAAA"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txt_tejia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="菲斯普特餐厅"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@mipmap/quanss" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="7折代金券"
+                    android:textColor="@color/colorbuttonshap"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/zheshangzhe"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                app:srcCompat="@mipmap/contents3" />
+
+            <TextView
+                android:id="@+id/txt_zheshangzhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="折上折"
+                android:textColor="@color/c1olorAAA"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txt_zhezhe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="米琪林餐厅"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@mipmap/quanss" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="9折代金券"
+                    android:textColor="@color/colorbuttonshap"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/hottest_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginEnd="11dp" />
+
+</RelativeLayout>

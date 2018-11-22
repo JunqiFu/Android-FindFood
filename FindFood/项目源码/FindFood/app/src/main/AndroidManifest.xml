@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.findfood">
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 允许应用程序打开网络套接字 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- 允许应用程序访问网络连接信息 -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".app.GuideActivity"
+            android:theme="@style/Guide">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.MainActivity"
+            android:theme="@style/Main"></activity>
+        <activity
+        android:name=".app.LoginActivity"
+        android:theme="@style/Guide" />
+        <activity
+            android:name=".app.RegistActivity"
+            android:theme="@style/Guide" />
+        <activity
+            android:name=".home.Shops_items_content"
+            android:theme="@style/Guide" />
+        <activity
+            android:name=".home.Foods_items_content"
+            android:theme="@style/Guide" />
+        <activity
+            android:name=".home.Cates_item_content"
+            android:theme="@style/Guide" />
+        <activity android:name=".mine.MineCollectionActivity"
+            android:theme="@style/Guide"/>
+        <activity android:name=".mine.MineRecordActivity"
+            android:theme="@style/Guide"/>
+        <activity android:name=".mine.MineModifyActivity"
+            android:theme="@style/Guide"/>
+        <activity android:name=".mine.MineRechargeActivity"
+            android:theme="@style/Guide"/>
+        <activity android:name=".mine.MineinfoModifyActivity"
+            android:theme="@style/Guide"/>
+        <activity android:name=".order.Orders_items_content"
+            android:theme="@style/Guide" ></activity>
+        <activity android:name="home.Foods_items_content"
+            android:theme="@style/Guide" >
+
+        </activity>
+        <activity android:name=".home.CitycalssActivity">
+
+
+        </activity>
+    </application>
+
+</manifest> <!-- <intent-filter> --><!-- <action android:name="android.intent.action.MAIN" /> --><!-- <category android:name="android.intent.category.LAUNCHER" /> --><!-- </intent-filter> -->

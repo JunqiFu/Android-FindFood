@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="#fff">
+    <RelativeLayout
+        android:id="@+id/order_tests_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@mipmap/content_bar_items">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="个人信息"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+    <!--用户个人信息-->
+    <RelativeLayout
+        android:id="@+id/Xinxi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/lyout_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/modifybutton"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@mipmap/caters_1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="25dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_usernames"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:maxLines="1"
+                        android:text="未登录"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_logintimes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:maxLines="2"
+                        android:text="----"
+                        android:textColor="@color/c1olorAAA"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tv_places"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:maxLines="2"
+                        android:text="----"
+                        android:textColor="@color/c1olorAAA"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <!--充值-->
+    <!--item内容部分的容器-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="8dp">
+
+        <!--item左边的Icon-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="余额:"
+
+            android:textSize="20dp" />
+
+        <!--item 中间部分的输入框（有则显示五则隐藏）-->
+
+        <!--item右边的文字-->
+        <TextView
+            android:id="@+id/tv_moneys"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="500"
+            android:textColor="@color/c1olorAAA"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_r"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp" />
+
+
+        <Button
+            android:id="@+id/btn_Recharge"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@mipmap/chongzhi"
+            android:clickable="true"
+            android:text="充值"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <!--我的收藏-->
+    <!--item内容部分的容器-->
+    <LinearLayout
+        android:id="@+id/lyout_Collection"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="8dp"
+        android:clickable="true">
+
+        <!--item左边的Icon-->
+        <ImageView
+            android:id="@+id/iv_left_icon"
+            android:layout_width="33dp"
+            android:layout_height="32dp"
+            android:background="@mipmap/unfavourite"
+
+            />
+
+        <!--item中间部分的文字-->
+        <TextView
+            android:id="@+id/tv_shoucang"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:text="我的收藏"
+            android:textColor="@color/c1olorAAA"
+            android:textSize="18dp" />
+
+
+        <!--item右边的文字-->
+        <TextView
+            android:id="@+id/tv_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp" />
+
+        <!--item右边的Icon 默认是向右的箭头-->
+        <ImageView
+            android:id="@+id/iv_right_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:src="@mipmap/homepage_right_arrow" />
+    </LinearLayout>
+
+    <!--我的消费记录-->
+
+    <!--item内容部分的容器-->
+    <LinearLayout
+        android:id="@+id/lyout_Record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="8dp"
+        android:clickable="true">
+
+        <!--item左边的Icon-->
+        <ImageView
+            android:id="@+id/iv_Xleft_icon"
+            android:layout_width="33dp"
+            android:layout_height="32dp"
+            android:background="@mipmap/shopping_cart_2"
+
+            />
+
+        <!--item中间部分的文字-->
+        <TextView
+            android:id="@+id/tv_xiaofei"
+            android:layout_width="67dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:text="我的消费记录"
+            android:textColor="@color/c1olorAAA"
+            android:textSize="18dp" />
+
+
+        <!--item右边的文字-->
+        <TextView
+            android:id="@+id/tv_Xright_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp" />
+
+        <!--item右边的Icon 默认是向右的箭头-->
+        <ImageView
+            android:id="@+id/iv_Xright_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:src="@mipmap/homepage_right_arrow" />
+    </LinearLayout>
+
+    <!---修改密码->
+
+    <!-item内容部分的容器-->
+    <LinearLayout
+        android:id="@+id/lyout_modify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="8dp"
+        android:clickable="true">
+
+        <!--item左边的Icon-->
+        <ImageView
+            android:id="@+id/iv_Mleft_icon"
+            android:layout_width="33dp"
+            android:layout_height="31dp"
+            android:background="@mipmap/thumbnails"
+
+            />
+
+        <!--item中间部分的文字-->
+        <TextView
+            android:id="@+id/tv_updatemima"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:text="修改密码"
+            android:textColor="@color/c1olorAAA"
+            android:textSize="18dp" />
+
+
+        <!--item右边的文字-->
+        <TextView
+            android:id="@+id/tv_Mright_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp" />
+
+        <!--item右边的Icon 默认是向右的箭头-->
+        <ImageView
+            android:id="@+id/iv_Mright_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:src="@mipmap/homepage_right_arrow" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/Sign_out"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@mipmap/tuichu"
+        android:text="退出登陆"
+        android:textSize="20dp" />
+
+</LinearLayout>

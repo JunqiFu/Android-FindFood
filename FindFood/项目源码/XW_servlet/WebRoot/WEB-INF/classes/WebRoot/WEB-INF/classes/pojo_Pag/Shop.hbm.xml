@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="pojo_Pag">
+
+	
+	<class name="Shop" table="tb_shops">
+		<id name="S_id" column="S_id">
+			<generator class="native"></generator>
+		</id>
+		<property name="S_price" ></property>
+		<property name="S_type" ></property>
+		<property name="S_name" ></property>
+		<property name="S_number" ></property>
+		<property name="U_account" ></property>
+		<property name="S_introduction" ></property>
+		<property name="S_address"></property>
+		<property name="S_phone" ></property>
+		<property name="S_headP" ></property>
+		<property name="S_tuiJianP" ></property>
+		<property name="S_workTime"></property>
+		
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@mipmap/xgdaohanglan">
+
+        <ImageView
+            android:id="@+id/fanhui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:paddingTop="6dp"
+            android:src="@mipmap/xback" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingTop="4dp"
+            android:text="编辑个人资料"
+
+            android:textSize="25dp" />
+
+
+    </RelativeLayout>
+
+
+
+<LinearLayout
+    android:layout_marginTop="20dp"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+
+
+    <TextView
+        android:layout_width="79dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.1"
+        android:background="@color/white"
+        android:text="真实姓名"
+        android:textSize="15dp" />
+
+    <EditText
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_weight="2"
+        android:background="@null" />
+
+
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:background="@color/gray"
+            android:layout_width="match_parent"
+            android:layout_height="3dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="性别"
+            android:textSize="15dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/sex_rg"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="男"
+            android:id="@+id/male_rb"/>
+        <TextView
+            android:layout_marginLeft="60dp"
+            android:layout_width="5dp"
+            android:layout_gravity="center"
+            android:layout_height="40dp"
+            android:background="@color/gray"/>
+
+        <RadioButton
+            android:layout_marginLeft="60dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="女"
+            android:id="@+id/famale_rb"/>
+    </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="出生日期"
+            android:textSize="15dp" />
+
+        <EditText
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="年" />
+
+        <EditText
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="月" />
+
+        <EditText
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="日" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/baocun"
+        android:text="保存"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/baocun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

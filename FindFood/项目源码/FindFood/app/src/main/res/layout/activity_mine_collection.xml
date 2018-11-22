@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.findfood.mine.MineCollectionActivity">
+
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="50dp"
+     android:background="@mipmap/xgdaohanglan">
+
+  <ImageView
+      android:id="@+id/rb_backssgg"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentStart="true"
+      android:layout_centerVertical="true"
+      android:layout_marginStart="13dp"
+      android:src="@mipmap/xback" />
+
+  <TextView
+
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentStart="true"
+      android:layout_centerVertical="true"
+      android:layout_marginStart="151dp"
+      android:text="我的收藏"
+      android:textColor="@color/white"
+      android:textSize="20dp" />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentEnd="true"
+      android:layout_centerVertical="true"
+      android:layout_marginEnd="13dp"
+      android:text="..."
+      android:textColor="@color/white"
+      android:textSize="20dp" />
+ </RelativeLayout>
+
+ <ListView
+     android:id="@+id/select_list_item"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+ </ListView>
+</LinearLayout>
